@@ -1,0 +1,36 @@
+<div class = "container-fluid">
+  <div id = "info" class="row">
+    <div class="col">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Channel</th>
+            <th scope="col">Seasons</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let serie of getSeries()" class="serieRow">
+            <td>{{serie.id}}</td>
+            <td><button style="
+            background-color: transparent;
+            border: 0cm;
+            outline: none;
+            color: #3b9af9;
+              "><u>{{serie.name}}</u></button></td>
+            <td>{{serie.channel}}</td>
+            <td>{{serie.seasons}}</td>
+          </tr>
+          <tr style="border-bottom: hidden;">
+            <td colspan="4">Seasons Average: {{getAverage()}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col">
+      <div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,7 @@
+.serieRow{
+  background-color: #e2e0e0;
+  border: 1px solid #cfcfcf;
+}
+.serieRow:hover{
+  background-color: #b9b9b9;
+}
